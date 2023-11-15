@@ -12,7 +12,7 @@ public:
 
     void OnFirstLogin(Player* player) override
     {
-        if (sConfigMgr->GetOption<bool>("LearnSpells.OnFirstLogin", 0))
+        if (sConfigMgr->GetOption<bool>("LearnSpells.LearnAllOnFirstLogin", 0))
         {
             LearnSpellsForNewLevel(player, 1);
         }
